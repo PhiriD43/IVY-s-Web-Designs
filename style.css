@@ -1,0 +1,50 @@
+/* General Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(rgba(20,20,40,0.65), rgba(20,20,40,0.65)), url('background.jpg') center/cover no-repeat fixed;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  max-width: 1050px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 36px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+h1 { font-size: 28px; }
+.subtitle { font-size: 18px; opacity: 0.9; }
+
+.checklist li {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  gap: 10px;
+}
+.check {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background: #2bb673;
+}
+
+.cta {
+  margin-top: 20px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #f2c94c, #f2994a);
+  color: #111;
+  font-weight: bold;
+  font-size: 20px;
+}
