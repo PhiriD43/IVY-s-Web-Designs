@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVY's Web Designs</title>
+
+<!-- Top-left logo -->
+<img src="logo.png" alt="Ivy Web Designs Logo" class="logo-top">
+
+<!-- Bottom-right logo -->
+<img src="logo.png" alt="Ivy Web Designs Logo" class="logo-bottom">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+/* Top-left logo */
+.logo-top {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  width: 100px;  /* adjust size */
+  z-index: 1000;
+}
+
+/* Bottom-right logo */
+.logo-bottom {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 100px;  /* adjust size */
+  z-index: 1000;
+  opacity: 0.8; /* optional, slightly transparent */
+}
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    .section {
+      margin: 40px auto;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .price-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .price-item {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea, select, button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    input, textarea, select {
+      width: 100%;
+    }
+
+    button {
+      background: #ff4081;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #e73370;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="overlay">
+    <h1><i>IVY's WEB DESIGNS</i></h1>
+    <p>Affordable & Professional Website Design</p>
+
+    <div class="section">
+      <h2>Our Services</h2>
+      <li style="text-align:left;">Websites starting from R2500 - R8500</li>
+      <li style="text-align:left;">Mobile-Friendly & Fast Loading</li>
+      <li style="text-align:left;">Perfect for Students, Startups & Small Businesses</li>
+      <li style="text-align:left;">Free Hosting & Domain Setup</li>
+    </div>
+
+    <div class="section">
+      <h2>Why Choose Us?</h2>
+      <li style="text-align:left;">Affordable & Reliable</li>
+      <li style="text-align:left;">Quick Delivery Times</li>
+      <li style="text-align:left;">Easy-to-Manage Websites</li>
+      <li style="text-align:left;">Ongoing WhatsApp Support</li>
+    </div>
+
+    <div class="section">
+      <h2>Website Packages</h2>
+       <div class="packages">
+    
+    <!-- R2500 Package -->
+    <div class="package-card">
+    <h3>Starter Website</h3>
+      <h4>R2500</h4>
+      <ul>
+        <li style="text-align:left;">1-2 Page Website</li>
+        <li style="text-align:left;">Mobile-Friendly (Responsive)</li>
+        <li style="text-align:left;">Basic Design Template (with your branding colors & logo)</li>
+        <li style="text-align:left;">Contact Form</li>
+        <li style="text-align:left;">WhatsApp Support</li>
+      </ul>
+      </div>
+
+<!-- R3500 Package -->
+    <div class="package-card">
+      <h3>Basic Business Website</h3>
+      <h4>R3500</h4>
+      <ul>
+        <li style="text-align:left;">2-3 Page Website (Home, About, Services)</li>
+        <li style="text-align:left;">Mobile-Friendly (Responsive Design)</li>
+        <li style="text-align:left;">Custom Design with Branding (colors, fonts, logo placement)</li>
+        <li style="text-align:left;">Contact Form + WhatsApp Chat Button</li>
+        <li style="text-align:left;">Basic SEO Setup (title & description for Google)</li>
+        <li style="text-align:left;">1 Free Update in the First Month</li>
+      </ul>
+      </div>
+
+<!-- R5000 Package -->
+    <div class="package-card">
+      <h3>Standard Website</h3>
+      <h4>R5000</h4>
+      <ul>
+        <li style="text-align:left;">3-4 Page Website (Home, About, Services, Portfolio)</li>
+        <li style="text-align:left;">Custom Responsive Design (unique layout tailored to your brand)</li>
+        <li style="text-align:left;">Contact/Booking Form</li>
+        <li style="text-align:left;">WhatsApp Chat Button Integration</li>
+        <li style="text-align:left;">Google Map Location Embed</li>
+        <li style="text-align:left;">Basic SEO Optimization (title, description, keywords)</li>
+        <li style="text-align:left;">2 Weeks Free Maintenance & Support</li>
+      </ul>
+      </div>
+
+<!-- R6500 Package -->
+    <div class="package-card">
+<h3>Professional Website</h3>
+<h4>R6500</h4> 
+<ul>
+<li style="text-align:left;">4-6 Page Website (Home, Services, Portfolio, Contact, etc.)
+<li style="text-align:left;">Mobile-Friendly (Responsive Design)
+<li style="text-align:left;">Custom Design with Your Branding (colors, logo, fonts)
+<li style="text-align:left;">Basic SEO Optimization (title, description, keywords)
+<li style="text-align:left;">Contact/Booking Form
+<li style="text-align:left;">WhatsApp Chat Button Integration
+<li style="text-align:left;">Google Map Location Embed
+<li style="text-align:left;">1 Month Free Maintenance (minor updates, support)
+</ul>
+      </div>
+
+<!-- R8500 Package -->
+    <div class="package-card">
+<h3>Business Plus Website</h3>
+<h4>R8500</h4> 
+<ul>
+<li style="text-align:left;">7-10 Page Website (includes all R6500 features + extra pages like Testimonials, Shop/Products)</li>
+<li style="text-align:left;">Advanced SEO Optimization (for better Google ranking)
+<li style="text-align:left;">Social Media Integration (Facebook, Instagram links & feeds)
+<li style="text-align:left;">Testimonials & Portfolio Section (to showcase past projects)
+<li style="text-align:left;">Basic E-commerce Setup (if needed, e.g., product listing + payment integration option)
+<li style="text-align:left;">2 Months Free Maintenance & Support
+<li style="text-align:left;">Speed Optimization (faster loading time)
+</ul>
+      <button>Select</button>
+      </div>
+
+    <div class="section">
+      <h2>Book / Contact Us</h2>
+      <form action="mailto:ivyswebdesigns@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <select name="package" required>
+          <option value="">Select Package</option>
+          <option value="R2500">R2500</option>
+          <option value="R3500">R3500</option>
+          <option value="R5000">R5000</option>
+          <option value="R5500">R6500</option>
+          <option value="R8500">R8500</option>
+        </select>
+        <textarea name="message" placeholder="Your Message or Website Needs" rows="5"></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+
+<div class="section">
+      <h2>Previous Work</h2>
+      <div class="portfolio">
+        <div class="website"> 
+< a href="https://sites.google.com/view/heightsphotography/home" target="_blank">Heights Photography</a></div>
+
+        <div class="website">
+<a href="https://sites.google.com/view/tharu-funeral-services/home" target="_blank">Tharu Funeral services</a></div>
+      
+<div class="website">
+<a href="https://sites.google.com/view/iikanyeng-ivsmediafusion/home" target="_blank">IVS Media Fusion</a></div>
+    </div>
+
+<script>
+    // Package details
+    const packageDetails = {
+      "R1500": 1 Page Website<br> Mobile-Friendly Design<br> Free Hosting for 3 Months<br> WhatsApp Support",
+      "R2000": Up to 3 Pages<br> Responsive Design<br> Domain Setup Guidance<br> Free Hosting for 6 Months",
+      "R2500": Up to 5 Pages<br> SEO Optimization<br> Basic Contact Form<br> Free Hosting for 6 Months",
+      "R3000": Up to 7 Pages<br> Custom Layouts<br> Blog Setup<br> Hosting Support",
+      "R3500": 10 Pages Website<br> eCommerce Ready<br> Social Media Integration<br> Hosting Support",
+      "R4000":  12 Pages Website<br> eCommerce Store<br> SSL Certificate<br>Priority Support",
+      "R4500": 15 Pages Website<br> Advanced Features<br> Analytics Setup<br> 1 Year Hosting",
+      "R5000": 20 Pages Website<br> Custom Branding<br> Payment Integration<br> 1 Year Hosting",
+      "R5500": 25 Pages Website<br> Membership System<br> Advanced Security<br> 1 Year Hosting",
+      "R6000": Full Business Website<br> Custom Features<br> Ongoing Support<br> 1 Year Hosting"
+    };
+
+    document.getElementById("package").addEventListener("change", function() {
+      const selected = this.value;
+      const detailsBox = document.getElementById("packageDetails");
+      if (selected && packageDetails[selected]) {
+        detailsBox.innerHTML = packageDetails[selected];
+        detailsBox.style.display = "block";
+      } else {
+        detailsBox.style.display = "none";
+      }
+    });
+  </script>
+
+
+    <footer>
+      <p>📞 WhatsApp/Call: 068 043 9598 | ✉ ivyswebdesigns@email.com</p>
+      <p>© 2025 IVY's Web Designs</p>
+    </footer>
+  </div>
+</body>
+</html>
