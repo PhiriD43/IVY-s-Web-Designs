@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVY's Web Designs</title>
+
+<!-- Top-left logo -->
+<img src="logo.png" alt="Ivy Web Designs Logo" class="logo-top">
+
+<!-- Bottom-right logo -->
+<img src="logo.png" alt="Ivy Web Designs Logo" class="logo-bottom">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('background.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+/* Top-left logo */
+.logo-top {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+  width: 100px;  /* adjust size */
+  z-index: 1000;
+}
+
+/* Bottom-right logo */
+.logo-bottom {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 100px;  /* adjust size */
+  z-index: 1000;
+  opacity: 0.8; /* optional, slightly transparent */
+}
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+/* Container */
+.package-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.package-buttons button {
+  background: #f4f4f4;
+  border: 2px solid #0077cc;
+  color: #0077cc;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.package-buttons button:hover {
+  background: #0077cc;
+  color: white;
+}
+
+.package-buttons button.active {
+  background: #0077cc;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Info box */
+.package-info {
+  
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: #000; /* Black text */
+}
+.package-info h3 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.package-info ul li {
+  padding-left: 20px;
+  margin-bottom: 6px;
+}
+
+.extra-btn {
+    padding:15px 25px;
+    border:none;
+    border-radius:8px;
+    background:#28a745; /* Green theme */
+    color:#fff;
+color: white;
+    font-size:1rem;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+  }
+  .extra-btn:hover {
+    background:#1e7e34;
+  }
+ 
+    .section {
+      margin: 40px auto;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .price-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .price-item {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea, select, button {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+
+    input, textarea, select {
+      width: 100%;
+    }
+
+    button {
+      background: #ff4081;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #e73370;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="overlay">
+    <h1><i>IVY's WEB DESIGNS</i></h1>
+    <p>Affordable & Professional Website Design</p>
+
+    <div class="section">
+      <h2>Our Services</h2>
+      <li style="text-align:left;">Websites starting from R2500 - R8500</li>
+      <li style="text-align:left;">Mobile-Friendly & Fast Loading</li>
+      <li style="text-align:left;">Perfect for Students, Startups & Small Businesses</li>
+      <li style="text-align:left;">Free Hosting & Domain Setup</li>
+    </div>
+
+    <div class="section">
+      <h2>Why Choose Us?</h2>
+      <li style="text-align:left;">Affordable & Reliable</li>
+      <li style="text-align:left;">Quick Delivery Times</li>
+      <li style="text-align:left;">Easy-to-Manage Websites</li>
+      <li style="text-align:left;">Ongoing WhatsApp Support</li>
+    </div>
+
+    <div class="section">
+<h2 style="text-align:center; margin-bottom:20px;">💻 Our Web Design Packages</h2>
+
+<div class="package-buttons">
+  <button onclick="showPackage('2500', this)">R2500</button>
+  <button onclick="showPackage('3500', this)">R3500</button>
+  <button onclick="showPackage('5000', this)">R5000</button>
+  <button onclick="showPackage('6500', this)">R6500</button>
+  <button onclick="showPackage('8500', this)">R8500</button>
+</div>
+
+<div id="package-info" class="package-info">
+  <p>Select a package above to view details.</p>
+</div>
+
+<div class="section">
+  <h2 style="text-align:center; font-size:2rem; margin-bottom:30px; color:#1a1a1a;">
+    Extra Services & Pricing</h2>
+
+  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+
+    <!-- Buttons -->
+    <button class="extra-btn" onclick="showExtra('images')">📷 Image Editing</button>
+    <button class="extra-btn" onclick="showExtra('videos')">🎥 Video Editing</button>
+    <button class="extra-btn" onclick="showExtra('design')">🎨 Design</button>
+    <button class="extra-btn" onclick="showExtra('maintenance')">🛠️ Website Maintenance & Package Deals</button>
+</div>
+</div>
+
+<!-- Extra Info -->
+  <div id="extra-info" style="margin-top:30px; text-align:center; font-size:1.1rem; color:#000;">
+    <p>Select an extra service to view details.</p>
+  </div>
+</section>
+
+    <div class="section">
+      <h2>Book / Contact Us</h2>
+      <form action="mailto:ivyswebdesigns@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <select name="package" required>
+          <option value="">Select Package</option>
+          <option value="R2500">R2500</option>
+          <option value="R3500">R3500</option>
+          <option value="R5000">R5000</option>
+          <option value="R5500">R6500</option>
+          <option value="R8500">R8500</option>
+        </select>
+        <textarea name="message" placeholder="Your Message or Website Needs" rows="5"></textarea>
+        <button type="submit">Send Request</button>
+      </form>
+    </div>
+
+<div class="section">
+      <h2>Previous Work</h2>
+      <div class="portfolio">
+
+        <div class="website"> 
+<a href="https://sites.google.com/view/heightsphotography/home" target="_blank">Heights Photography</a></div>
+
+<div class="website">
+<a href="https://sites.google.com/view/iikanyeng-ivsmediafusion/home" target="_blank">IVS Media Fusion</a></div>
+
+<div class="website">
+<a href="https://sites.google.com/view/tharu-funeral-services/home" target="_blank">Tharu Funeral services</a></div>
+      
+    </div>
+
+<script>
+   function showPackage(price, btn) {
+  let details = {
+    "2500": `
+      <h3>R2500 Package – Starter Website</h3>
+      <ul>
+        <li style="text-align:left;">1–2 Page Website </li>
+        <li style="text-align:left;">Mobile-Friendly</li>
+        <li style="text-align:left;">Basic Design Template</li>
+        <li style="text-align:left;">Contact Form + WhatsApp Button</li>
+      </ul>
+    `,
+    "3500": `
+      <h3>R3500 Package – Basic Business Website</h3>
+      <ul>
+        <li style="text-align:left;">2–3 Page Website</li>
+        <li style="text-align:left;">Custom Responsive Design</li>
+        <li style="text-align:left;">Contact Form + WhatsApp</li>
+        <li style="text-align:left;">Basic SEO Setup</li>
+        <li style="text-align:left;">1 Free Update in First Month</li>
+      </ul>
+    `,
+    "5000": `
+      <h3>R5000 Package – Standard Website</h3>
+      <ul>
+        <li style="text-align:left;">3–4 Page Website (Home, About, Services, Portfolio)</li>
+        <li style="text-align:left;">Custom Responsive Design</li>
+        <li style="text-align:left;">Contact/Booking Form</li>
+        <li style="text-align:left;">Google Map Embed</li>
+        <li style="text-align:left;">Basic SEO Optimization</li>
+        <li style="text-align:left;">2 Weeks Free Maintenance & Support</li>
+      </ul>
+    `,
+    "6500": `
+      <h3>R6500 Package – Professional Website</h3>
+      <ul>
+        <li style="text-align:left;">4–6 Page Website</li>
+        <li style="text-align:left;">Mobile-Friendly Custom Design</li>
+        <li style="text-align:left;">Contact/Booking Form</li>
+        <li style="text-align:left;">WhatsApp Button</li>
+        <li style="text-align:left;">Google Map Location</li>
+        <li style="text-align:left;">Basic SEO</li>
+        <li style="text-align:left;">1 Month Free Maintenance</li>
+      </ul>
+    `,
+    "8500": `
+      <h3>R8500 Package – Business Plus Website</h3>
+      <ul>
+        <li style="text-align:left;">7–10 Page Website (includes all R6500 features)</li>
+        <li style="text-align:left;">Advanced SEO Optimization</li>
+        <li style="text-align:left;">Social Media Integration</li>
+        <li style="text-align:left;">Testimonials & Portfolio Section</li>
+        <li style="text-align:left;">Basic E-commerce Setup</li>
+        <li style="text-align:left;">2 Months Free Maintenance & Support</li>
+      </ul>
+   `
+  };
+
+  // Update content
+  document.getElementById("package-info").innerHTML = details[price];
+
+  // Remove active class from all buttons
+  let buttons = document.querySelectorAll(".package-buttons button");
+  buttons.forEach(b => b.classList.remove("active"));
+
+  // Add active class to clicked button
+  btn.classList.add("active");
+}
+
+function showExtra(extra) {
+    let info = document.getElementById("extra-info");
+
+    if(extra === "images") {
+      info.innerHTML = `
+        <h3 style="color:#28a745;">📷 Image Editing</h3>
+        <p>Restoration</p>
+        <p>Basic Retouch</p>
+        <p>Background Removal</p>
+        <p style="font-weight:bold; color:#333;">From R350 – R500</p>`;
+    }
+    else if(extra === "videos") {
+      info.innerHTML = `
+        <h3 style="color:#28a745;">🎥 Video Editing</h3>
+        <p>Advanced Edits</p>
+        <p>YouTube Projects</p>
+        <p>Social Media Clips</p>
+        <p style="font-weight:bold; color:#333;">From R400 – R800</p>`;
+    }
+     else if(extra === "design") {
+      info.innerHTML = `
+        <h3 style="color:#28a745;">🎨 Design</h3>
+         <p>Logos</p>
+         <p>Flyers</p>
+         <p>Posters</p>                  
+         <p>Banners</p>
+         <p style="font-weight:bold; color:#333;">From R600 – R1,500</p>`;
+    }
+    else if(extra === "maintenance") {
+      info.innerHTML = `
+        <h3 style="color:#28a745;">🛠️ Website Maintenance & Package Deals</h3>
+        <p>Starter</p> s
+        <p>Updates</p>
+        <p>Business</p>
+        <p>Monthly backups</p> 
+        <p>Premium Bundles</p>
+        <p>Security checks</p>
+        <p style="font-weight:bold; color:#333;">From R800 – R1,800</p>`;
+    }
+  }
+</script>
+   
+    <footer>
+      <p>📞 WhatsApp/Call: 068 043 9598 | ✉ ivyswebdesigns@email.com</p>
+      <p>© 2025 IVY's Web Designs</p>
+    </footer>
+  </div>
+</body>
+</html>
